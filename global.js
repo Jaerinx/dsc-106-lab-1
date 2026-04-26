@@ -4,16 +4,58 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
+export async function fetchJSON(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching or parsing JSON data:", error);
+    return [];
+  }
+}
+
+export function renderProjects(projects, containerElement, headingLevel = "h2") {
+  if (!containerElement) {
+    return;
+  }
+
+  const validHeading = /^h[1-6]$/i.test(headingLevel) ? headingLevel.toLowerCase() : "h2";
+
+  containerElement.innerHTML = "";
+
+  for (const project of projects) {
+    const article = document.createElement("article");
+    article.innerHTML = `
+      <${validHeading}>${project.title ?? "Untitled project"}</${validHeading}>
+      <img src="${project.image ?? ""}" alt="${project.title ?? "Project image"}">
+      <p>${project.description ?? ""}</p>
+    `;
+    containerElement.append(article);
+  }
+}
+
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
+
+export const fetchGithubData = fetchGitHubData;
+
 const BASE_PATH =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
     ? "/"
     : "/dsc-106-lab-1/";
 
 const pages = [
-  { url: "", title: "home" },
-  { url: "contact/", title: "contact" },
-  { url: "projects/", title: "projects" },
-  { url: "resume/", title: "resume" },
+  { url: "", title: "Home" },
+  { url: "contact/", title: "Contact" },
+  { url: "projects/", title: "Projects" },
+  { url: "resume/", title: "Resume" },
+  { url: "https://github.com/Jaerinx", title: "GitHub" },
 ];
 
 function normalizePath(pathname) {
@@ -62,7 +104,7 @@ document.body.insertAdjacentHTML(
 	</label>`,
 );
 
-let select = document.querySelector("select");
+let select = document.querySelector(".color-scheme select");
 
 function setColorScheme(colorScheme) {
   document.documentElement.style.setProperty("color-scheme", colorScheme);

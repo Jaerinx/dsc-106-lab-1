@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Wave Function Collapse Simulator for 2-D Terrain Generation",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built an interactive visualizer for Wave Function Collapse and Model Synthesis using Next.js and Tailwind CSS, and improved simulation performance by about 50% with SSR optimizations."
+  },
+  {
+    "title": "TESC Portal",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Developed a React, Supabase, and PostgreSQL portal for memberships, event attendance, and announcements with role-based access, RSVP tracking, searchable listings, and profile tools."
+  },
+  {
+    "title": "DSC 106 Lab 1 Portfolio",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Personal portfolio website for DSC 106 with modular JavaScript, reusable project rendering, and dynamic navigation/theme features."
+  },
+  {
+    "title": "DSC 106 Project 1",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Course visualization project built for DSC 106, focused on communicating data clearly through interactive and narrative design."
+  },
+  {
+    "title": "League of Legends Performance Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Data analysis project exploring gameplay performance trends, using structured metrics and visual summaries to compare match outcomes."
+  },
+  {
+    "title": "Personal Portfolio (TypeScript)",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Modern portfolio rebuild in TypeScript with cleaner component structure and stronger typing for maintainability."
+  },
+  {
+    "title": "GitHub Workshop",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Hands-on repository for practicing GitHub workflows, including branching, commits, pull requests, and collaboration basics."
+  },
+  {
+    "title": "New Portfolio",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Early portfolio iteration used to prototype layout ideas, responsiveness, and interactive front-end components."
+  },
+  {
+    "title": "Supabase Testing App",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Experimental app for testing Supabase authentication and database integration patterns in a TypeScript project."
+  },
+  {
+    "title": "Conway",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Implementation of Conway's Game of Life focused on grid updates, rendering performance, and interactive controls."
+  },
+  {
+    "title": "Logo Animation",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "TypeScript animation project for exploring motion design timing, transforms, and reusable animation patterns."
+  },
+  {
+    "title": "Carousel Component",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Interactive carousel UI component with keyboard and button controls, built to practice stateful front-end interactions."
+  }
+]

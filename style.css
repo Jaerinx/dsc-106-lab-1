@@ -99,7 +99,7 @@ h6 {
   grid-row: span 3;
 }
 
-.projects article h2 {
+.projects article :is(h1, h2, h3, h4, h5, h6) {
   margin: 0;
 }
 
@@ -133,4 +133,20 @@ main article {
 
 main article h3 {
   margin-block: 0 0.35em;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem 1rem;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: 600;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
 }
